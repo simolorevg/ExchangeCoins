@@ -31,6 +31,9 @@ export default {
         startOfWeek(date) {//this function allows me to have always the first day of the week
             var diff = date.getDate() - date.getDay() + (date.getDay() === 0 ? -6 : 1);
             return new Date(date.setDate(diff));
+        },
+        makeTheGraph() {
+
         }
     }
 }
