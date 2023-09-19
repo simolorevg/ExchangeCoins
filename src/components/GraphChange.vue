@@ -1,8 +1,6 @@
 <script>
 import Chart from 'chart.js/auto';
 import { store } from '../store';
-import axios from 'axios';
-
 export default {
     components: {
         store
