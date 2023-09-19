@@ -14,7 +14,7 @@ export default {
         this.calculatedates();
     },
     methods: {
-        calculatedates() {
+        calculatedates() {//this function calculate the dates for the api request of the weekly values of the change
             let a = new Date();
             let b = this.startOfWeek(new Date());
             if ((a.getMonth() + 1) < 10) {
@@ -28,7 +28,7 @@ export default {
                 this.store.firstOfTheWeek = `${b.getFullYear()}-${b.getMonth() + 1}-${b.getDate()}`;
             }
         },
-        startOfWeek(date) {
+        startOfWeek(date) {//this function allows me to have always the first day of the week
             var diff = date.getDate() - date.getDay() + (date.getDay() === 0 ? -6 : 1);
             return new Date(date.setDate(diff));
         }
